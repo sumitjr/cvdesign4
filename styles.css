@@ -27,6 +27,7 @@ body {
   overflow: hidden; */
 
   height: 840px;
+  margin: auto;
   width: 595px;
   padding-bottom: 30px;
   font-size: 9.125px;
@@ -231,17 +232,55 @@ body {
 .header {
   min-height: 100px;
   position: relative;
+  border: 1px solid;
   /* display: flex;
   flex-direction: column;
   justify-content: flex-end; */
 }
 
 .headerSub {
-  /* display: -webkit-box; */
-  position: absolute;
   width: 100%;
-  top: 50%;
-  transform: translate(0, -50%);
+  /* display: -webkit-box; */
+  /* position: absolute; */
+  /* width: 100%; */
+  /* top: 50%; */
+  /* transform: translate(0, -50%); */
+}
+.headerSub p{
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* vertical-align: middle;/ */
+  border: 1px solid;
+}
+
+.leftHeader{
+  width: 35%;
+  float: left;
+  display: table;
+  background: #f3583a;
+  min-height: 100px;
+  margin: auto;
+  /* padding: 10px; */
+  /* border: 1px solid; */
+}
+.leftHeader p{
+  display: table-cell;
+  vertical-align: middle;
+}
+.middleHeader{
+  width: 30%;
+  background: #9cc51e;
+  margin: auto;
+  min-height: 100px;
+  float: left;
+  /* border: 1px solid; */
+}
+.rightHeader{
+  width: 35%;
+  background: green;
+  min-height: 100px;
+  /* border: 1px solid; */
+  float: left;
 }
 
 .verticalLine1LeftSide {
@@ -312,7 +351,14 @@ body {
 }
 
 .textContainer.rightShift p:last-child {
+ display: table;
   margin: -2px 0;
+}
+
+.rightShift .tableCell{
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid;
 }
 
 .leftShift {
