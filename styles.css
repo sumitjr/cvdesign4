@@ -12,19 +12,27 @@
 body {
   background-color: #efefef;
   color: #495062;
-  font-family: 'droidserif', 'Fira Sans', 'Quicksand';
-  margin: 10% 20%;
+  font-family: 'Sorts Mill Goudy', 'Fira Sans', 'Quicksand';
+  /* margin: 10% 20%; */
   /* font-size: 16px; */
   /* padding: 10px; */
 }
 
 .page {
-  min-height: 1123px;
+  /* min-height: 1123px;
   max-height: 1123px;
   min-width: 794px;
   max-width: 794px;
   margin: 2% auto;
-  overflow: hidden;
+  overflow: hidden; */
+
+  height: 840px;
+  width: 595px;
+  padding-bottom: 30px;
+  font-size: 9.125px;
+  font-family: 'Sorts Mill Goudy', 'Fira Sans', 'Quicksand';
+  position: relative;
+  /* overflow: hidden; */
 }
 
 .bullets {
@@ -89,13 +97,13 @@ body {
 
 .yearTextLeft {
   color: grey;
-  font-size: small;
+  font-size: 10px;
   margin-right: 5px;
 }
 
 .yearTextRight {
   color: grey;
-  font-size: 15px;
+  font-size: 10px;
   margin-top: -3px;
 }
 
@@ -109,6 +117,18 @@ body {
 
 .flexPer100 {
   flex: 1;
+}
+
+.fontSize8 {
+  font-size: 8px;
+}
+
+.fontSize9 {
+  font-size: 9px;
+}
+
+.fontSize10 {
+  font-size: 10px;
 }
 
 .fontSize11 {
@@ -200,19 +220,28 @@ body {
 }
 
 .circle {
-  width: 75px;
-  height: 75px;
-  margin: 0px 10px;
-  border: 10px solid;
+  width: 50px;
+  height: 50px;
+  margin: 0px 5px;
+  border: 5px solid;
   position: relative;
   border-radius: 50%;
 }
 
 .header {
-  height: 135px;
-  display: flex;
+  min-height: 100px;
+  position: relative;
+  /* display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-end; */
+}
+
+.headerSub {
+  /* display: -webkit-box; */
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .verticalLine1LeftSide {
@@ -254,19 +283,28 @@ body {
 }
 
 .topHighlight {
-  height: 100px;
+  height: 60px;
+  /* display: -webkit-box; */
   background-color: #f3583a;
   position: relative;
 }
 
 .topHighlight .textContainer {
+  /* display: -webkit-box; */
+  height: 60px;
+  width: 40%;
+  /* background-color: #f3583a; */
+  /* margin: auto; */
+  /* width: 40%; */
   position: absolute;
   width: 200px;
-  height: 100px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  /* height: 60px; */
   /* should be same as topHighlight class's height */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .textContainer p {
@@ -278,7 +316,7 @@ body {
 }
 
 .leftShift {
-  left: 10%;
+  left: 5%;
 }
 
 .textWhite {
@@ -314,16 +352,17 @@ body {
 }
 
 .rightShift {
-  right: 10%;
+  right: 5%;
 }
 
 .imageContainer {
-  height: 140px;
+  height: 90px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%);
   overflow: hidden;
+  /* width: 20%; */
 }
 
 /* .imageCirlce {
@@ -335,10 +374,10 @@ body {
 } */
 
 img {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
-  border: 10px solid white;
+  border: 5px solid white;
   background-color: burlywood;
 }
 
@@ -378,11 +417,11 @@ img {
 
 .timelineText {
   color: grey;
-  font-size: 13px;
+  font-size: 9px;
 }
 
 .circle p {
-  font-size: 10px;
+  font-size: 7px;
   position: absolute;
   top: 50%;
   left: 50%;
